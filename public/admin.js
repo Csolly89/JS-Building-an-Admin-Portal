@@ -20,14 +20,14 @@ async function bookList (){
     book.forEach(displayBooks)
 }
 
-async function bookTitles (title){
-    try{
-    let response = await fetch (apiURL+ "/"+ "title" )
-    console.log(response)
-    } catch (error) {
-        console.error("Could not find book title", title)
-    }
-}
+// async function bookTitles (title){
+//     try{
+//     let response = await fetch (apiURL+ "/"+ "title" )
+//     console.log(response)
+//     } catch (error) {
+//         console.error("Could not find book title", title)
+//     }
+// }
 
 function displayBooks(book){
     // creating a link to the html ID to be a connection from JS to Html
@@ -73,4 +73,6 @@ displayBooks()
 // When viewing the page in the browser, http://localhost:3001/listBooks must show the list of books specified in db.json.
 // When viewing the page in the browser, http://localhost:3001/admin must show the list of books specified in db.json.
 // When viewing the page in the browser, http://localhost:3001/admin must have a text input and submit button next to each book title.
-// When a book's submit button is clicked after entering a quantity in the text input, the quantity of the book must be updated and rendered correctly when viewing the /listBooks endpoint.
+// When a book's submit button is clicked after entering a quantity in the text input, the quantity of the book must be updated and rendered correctly when viewing the /listBooks endpoint
+
+// Reference day 10 order.js for bonus product on deleting and adding a book
